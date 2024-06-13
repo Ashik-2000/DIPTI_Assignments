@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dashed ; */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.kakashi {
+    width: 400px;
+    height: 400px;
+}
+
+.naruto,
+.sai,
+.sakura,
+.sasuke {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.naruto {
+    top: 0;
+    left: 0;
+    animation: naruto 4s linear infinite;
+}
+
+.sai {
+    bottom: 0;
+    right: 0;
+    animation: sai 4s linear infinite;
+}
+
+.sakura {
+    top: 0;
+    right: 0;
+    animation: sakura 4s linear infinite;
+}
+
+.sasuke {
+    bottom: 0;
+    left: 0;
+    animation: sasuke 4s linear infinite;
+}
+
+@keyframes naruto {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: 350px;
+    }
+
+    50% {
+        top: 350px;
+        left: 350px;
+    }
+
+    75% {
+        top: 350px;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes sai {
+    0% {
+        bottom: 0;
+        right: 0;
+    }
+
+    25% {
+        bottom: 0;
+        right: 350px;
+    }
+
+    50% {
+        bottom: 350px;
+        right: 350px;
+    }
+
+    75% {
+        bottom: 350px;
+        right: 0;
+    }
+
+    100% {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@keyframes sakura {
+    0% {
+        top: 0;
+        right: 0;
+    }
+
+    25% {
+        top: 350px;
+        right: 0;
+    }
+
+    50% {
+        top: 350px;
+        right: 350px;
+    }
+
+    75% {
+        top: 0px;
+        right: 350px;
+    }
+
+    100% {
+        top: 0;
+        right: 0;
+    }
+}
+
+@keyframes sasuke {
+    0% {
+        bottom: 0;
+        left: 0;
+    }
+
+    25% {
+        bottom: 350px;
+        left: 0;
+    }
+
+    50% {
+        bottom: 350px;
+        left: 350px;
+    }
+
+    75% {
+        bottom: 0px;
+        left: 350px;
+    }
+
+    100% {
+        bottom: 0;
+        left: 0;
+    }
+}
