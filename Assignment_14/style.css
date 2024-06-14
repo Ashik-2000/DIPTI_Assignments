@@ -12,26 +12,18 @@ body {
     align-items: center;
 }
 
-.parent {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
 .kakashi {
     width: 400px;
     height: 400px;
+    position: relative;
 }
 
 .naruto,
 .sai,
 .sakura,
 .sasuke {
-    width: 150px;
-    height: 150px;
+    width: 50%;
+    height: 50%;
     position: absolute;
 }
 
@@ -45,25 +37,8 @@ img {
 .naruto {
     top: 0;
     left: 0;
+    transform: translate(-50%, -50%);
     animation: naruto 4s linear infinite;
-}
-
-.sai {
-    bottom: 0;
-    right: 0;
-    animation: sai 4s linear infinite;
-}
-
-.sakura {
-    top: 0;
-    right: 0;
-    animation: sakura 4s linear infinite;
-}
-
-.sasuke {
-    bottom: 0;
-    left: 0;
-    animation: sasuke 4s linear infinite;
 }
 
 @keyframes naruto {
@@ -74,16 +49,16 @@ img {
 
     25% {
         top: 0;
-        left: 350px;
+        left: 100%;
     }
 
     50% {
-        top: 350px;
-        left: 350px;
+        top: 100%;
+        left: 100%;
     }
 
     75% {
-        top: 350px;
+        top: 100%;
         left: 0;
     }
 
@@ -91,6 +66,13 @@ img {
         top: 0;
         left: 0;
     }
+}
+
+.sai {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    animation: sai 4s linear infinite;
 }
 
 @keyframes sai {
@@ -101,16 +83,16 @@ img {
 
     25% {
         bottom: 0;
-        right: 350px;
+        right: 100%;
     }
 
     50% {
-        bottom: 350px;
-        right: 350px;
+        bottom: 100%;
+        right: 100%;
     }
 
     75% {
-        bottom: 350px;
+        bottom: 100%;
         right: 0;
     }
 
@@ -118,6 +100,13 @@ img {
         bottom: 0;
         right: 0;
     }
+}
+
+.sakura {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    animation: sakura 4s linear infinite;
 }
 
 @keyframes sakura {
@@ -127,18 +116,18 @@ img {
     }
 
     25% {
-        top: 350px;
+        top: 100%;
         right: 0;
     }
 
     50% {
-        top: 350px;
-        right: 350px;
+        top: 100%;
+        right: 100%;
     }
 
     75% {
-        top: 0px;
-        right: 350px;
+        top: 0;
+        right: 100%;
     }
 
     100% {
@@ -147,6 +136,15 @@ img {
     }
 }
 
+.sasuke {
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+    animation: sasuke 4s linear infinite;
+}
+
+
+
 @keyframes sasuke {
     0% {
         bottom: 0;
@@ -154,18 +152,18 @@ img {
     }
 
     25% {
-        bottom: 350px;
+        bottom: 100%;
         left: 0;
     }
 
     50% {
-        bottom: 350px;
-        left: 350px;
+        bottom: 100%;
+        left: 100%;
     }
 
     75% {
-        bottom: 0px;
-        left: 350px;
+        bottom: 0;
+        left: 100%;
     }
 
     100% {
