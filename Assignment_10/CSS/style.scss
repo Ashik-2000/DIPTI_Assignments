@@ -13,6 +13,7 @@ $bg: #aaa;
     font-size: 1.1rem;
     line-height: 60px;
     text-align: center;
+    display: block;
 }
 
 @mixin underline($x) {
@@ -174,16 +175,12 @@ nav {
             }
         }
 
+        // Portfolio Dro Down Menu *******************************
         >li:nth-child(3) {
             >.portfolio {
-                position: absolute;
-                left: 0;
-                top: 110%;
+                @include dropdowndiv(0, 10%);
+                position: fixed;
                 width: 100vw;
-                background: $bg;
-                opacity: 1;
-                visibility: visible;
-                transition: $transform;
                 display: flex;
                 padding: 15px;
                 gap: 15px;
@@ -204,7 +201,7 @@ nav {
 
             &:hover {
                 >.portfolio {
-                    top: 100%;
+                    @include dropdowneffect(0, 7%);
                 }
             }
         }
