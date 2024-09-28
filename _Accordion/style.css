@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px dashed ; */
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion{
+    width: 50%;
+    background: #eee;
+    color: #444;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.accordion:hover{
+    background-color: #ccc;
+}
+
+div{
+    width: 50%;
+}
+
+.panel{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
